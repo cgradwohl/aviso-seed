@@ -1,6 +1,7 @@
 {
   "name": "aviso-seed",
-  "version": "0.0.0",
+  "author": "Chris Gradwohl",
+  "version": "0.0.01",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
