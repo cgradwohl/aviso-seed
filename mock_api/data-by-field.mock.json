@@ -1,174 +1,176 @@
-[
-    {
-      "label": "Plan",
-      "fmt": "amount",
-      "field": "fcPlan",
-      "nodes": {
-            ".~::~summary": {
-                "name": "Global",
-                "is_child": false,
-                "is_rep": false,
-                "value": 945678567
-              },
-            "Type~::~Existing Business": {
-                "name": "Existing Business",
-                "is_child": true,
-                "is_rep": false,
-                "value": 52970000
-            },
-            "Product~::~Support": {
-                "name": "Education",
-                "is_child": true,
-                "is_rep": false,
-                "value": 6030000
-              },
-            "Product~::~Education": {
-                "name": "Education",
-                "is_child": true,
-                "is_rep": false,
-                "value": 6030000
-            }
-        }
-    },
-    {
-        "field":"forecast",
-        "label": "AVISO Forecast",
-        "fmt": "amount",
-        "nodes": {
-            ".~::~summary": {
-                "name": "Global",
-                "is_child": false,
-                "is_rep": false,
-                "value": 110787197.94,
-                "upside": 118502182.67,
-                "downside": 103386601.98
-            },
-            "Type~::~Existing Business": {
-              "name": "Existing Business",
-              "is_child": true,
-              "is_rep": false,
-              "value": 64363725.37,
-              "upside": 70240663.04,
-              "downside": 58683409.06
-            },
-            "Product~::~Support": {
-              "name": "Support",
-              "is_child": true,
-              "is_rep": false,
-              "value": 9276081.09,
-              "upside": 11371616.48,
-              "downside": 6832158.07
-            },
-            "Product~::~Education": {
-              "name": "Education",
-              "is_child": true,
-              "is_rep": false,
-              "value": 6954723.43,
-              "upside": 8943579.41,
-              "downside": 5645894.02
-            }
-        }
-    },
-    {
-        "label": "Booked",
-        "field": "fc0",
-        "fmt": "amount",
-        "nodes": {
-            ".~::~summary": {
-                "name": "Global",
-                "is_child": false,
-                "is_rep": false,
-                "value": 43257265.3,
-                "change": {
-                  "v": 12338750.199999996,
-                  "label": "Since Last Week"
+{
+    "data-by-field":[
+        {
+          "label": "Plan",
+          "fmt": "amount",
+          "field": "fcPlan",
+          "nodes": {
+                ".~::~summary": {
+                    "name": "Global",
+                    "is_child": false,
+                    "is_rep": false,
+                    "value": 945678567
+                  },
+                "Type~::~Existing Business": {
+                    "name": "Existing Business",
+                    "is_child": true,
+                    "is_rep": false,
+                    "value": 52970000
+                },
+                "Product~::~Support": {
+                    "name": "Education",
+                    "is_child": true,
+                    "is_rep": false,
+                    "value": 6030000
+                  },
+                "Product~::~Education": {
+                    "name": "Education",
+                    "is_child": true,
+                    "is_rep": false,
+                    "value": 6030000
                 }
-            },
-            "Type~::~Existing Business": {
-                "name": "Existing Business",
-                "is_child": true,
-                "is_rep": false,
-                "value": 26636176.2,
-                "change": {
-                  "v": 9021211.399999999,
-                  "label": "Since Last Week"
+            }
+        },
+        {
+            "field":"forecast",
+            "label": "AVISO Forecast",
+            "fmt": "amount",
+            "nodes": {
+                ".~::~summary": {
+                    "name": "Global",
+                    "is_child": false,
+                    "is_rep": false,
+                    "value": 110787197.94,
+                    "upside": 118502182.67,
+                    "downside": 103386601.98
+                },
+                "Type~::~Existing Business": {
+                  "name": "Existing Business",
+                  "is_child": true,
+                  "is_rep": false,
+                  "value": 64363725.37,
+                  "upside": 70240663.04,
+                  "downside": 58683409.06
+                },
+                "Product~::~Support": {
+                  "name": "Support",
+                  "is_child": true,
+                  "is_rep": false,
+                  "value": 9276081.09,
+                  "upside": 11371616.48,
+                  "downside": 6832158.07
+                },
+                "Product~::~Education": {
+                  "name": "Education",
+                  "is_child": true,
+                  "is_rep": false,
+                  "value": 6954723.43,
+                  "upside": 8943579.41,
+                  "downside": 5645894.02
                 }
-            },
-            "Product~::~Support": {
-              "name": "Support",
-              "is_child": true,
-              "is_rep": false,
-              "value": 5390613.2,
-              "change": {
-                "v": 387082.9000000004,
-                "label": "Since Last Week"
-              }
-            },
-            "Product~::~Education": {
-              "name": "Education",
-              "is_child": true,
-              "is_rep": false,
-              "value": 3790164,
-              "change": {
-                "v": 842031.2999999998,
-                "label": "Since Last Week"
-              }
+            }
+        },
+        {
+            "label": "Booked",
+            "field": "fc0",
+            "fmt": "amount",
+            "nodes": {
+                ".~::~summary": {
+                    "name": "Global",
+                    "is_child": false,
+                    "is_rep": false,
+                    "value": 43257265.3,
+                    "change": {
+                      "v": 12338750.199999996,
+                      "label": "Since Last Week"
+                    }
+                },
+                "Type~::~Existing Business": {
+                    "name": "Existing Business",
+                    "is_child": true,
+                    "is_rep": false,
+                    "value": 26636176.2,
+                    "change": {
+                      "v": 9021211.399999999,
+                      "label": "Since Last Week"
+                    }
+                },
+                "Product~::~Support": {
+                  "name": "Support",
+                  "is_child": true,
+                  "is_rep": false,
+                  "value": 5390613.2,
+                  "change": {
+                    "v": 387082.9000000004,
+                    "label": "Since Last Week"
+                  }
+                },
+                "Product~::~Education": {
+                  "name": "Education",
+                  "is_child": true,
+                  "is_rep": false,
+                  "value": 3790164,
+                  "change": {
+                    "v": 842031.2999999998,
+                    "label": "Since Last Week"
+                  }
+                }
+            }
+        },
+        {
+            "label": "Commit",
+            "field": "fc1",
+            "fmt": "amount",
+            "nodes": {
+                ".~::~summary": {
+                    "name": "Global",
+                    "is_child": false,
+                    "is_rep": false,
+                    "value": 193460288,
+                    "adjusted": 192495420,
+                    "unadjusted": 73416948.7,
+                    "change": {
+                      "v": 128724288,
+                      "label": "Since Last Week"
+                    }
+                },
+                "Type~::~Existing Business": {
+                  "name": "Existing Business",
+                  "is_child": true,
+                  "is_rep": false,
+                  "value": 45699750,
+                  "adjusted": 46851000,
+                  "unadjusted": 45952296.6,
+                  "change": {
+                    "v": 7688000,
+                    "label": "Since Last Week"
+                  }
+                },
+                "Product~::~Support": {
+                  "name": "Support",
+                  "is_child": true,
+                  "is_rep": false,
+                  "value": 8655900,
+                  "adjusted": 9642000,
+                  "unadjusted": 9502583.3,
+                  "change": {
+                    "v": 0,
+                    "label": "Since Last Week"
+                  }
+                },
+                "Product~::~Education": {
+                  "name": "Education",
+                  "is_child": true,
+                  "is_rep": false,
+                  "value": 4906750,
+                  "adjusted": 4766000,
+                  "unadjusted": 4812257,
+                  "change": {
+                    "v": 628000,
+                    "label": "Since Last Week"
+                  }
+                }
             }
         }
-    },
-    {
-        "label": "Commit",
-        "field": "fc1",
-        "fmt": "amount",
-        "nodes": {
-            ".~::~summary": {
-                "name": "Global",
-                "is_child": false,
-                "is_rep": false,
-                "value": 193460288,
-                "adjusted": 192495420,
-                "unadjusted": 73416948.7,
-                "change": {
-                  "v": 128724288,
-                  "label": "Since Last Week"
-                }
-            },
-            "Type~::~Existing Business": {
-              "name": "Existing Business",
-              "is_child": true,
-              "is_rep": false,
-              "value": 45699750,
-              "adjusted": 46851000,
-              "unadjusted": 45952296.6,
-              "change": {
-                "v": 7688000,
-                "label": "Since Last Week"
-              }
-            },
-            "Product~::~Support": {
-              "name": "Support",
-              "is_child": true,
-              "is_rep": false,
-              "value": 8655900,
-              "adjusted": 9642000,
-              "unadjusted": 9502583.3,
-              "change": {
-                "v": 0,
-                "label": "Since Last Week"
-              }
-            },
-            "Product~::~Education": {
-              "name": "Education",
-              "is_child": true,
-              "is_rep": false,
-              "value": 4906750,
-              "adjusted": 4766000,
-              "unadjusted": 4812257,
-              "change": {
-                "v": 628000,
-                "label": "Since Last Week"
-              }
-            }
-        }
-    }
-]
+    ]
+}

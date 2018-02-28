@@ -1,6 +1,7 @@
 {
     "deals": [
         {
+            "H":".~::~summary",
             "Amount":"$4,000",
             "CloseDate":"Jun 30 2017",
             "ForecastCategory":"Omitted",
@@ -12,6 +13,7 @@
             }
         },
         {
+            "H":".~::~summary",
             "Amount":"$4,001",
             "CloseDate":"Jun 30 2017",
             "ForecastCategory":"Omitted",
@@ -23,6 +25,7 @@
             }
         },
         {
+            "H":"Type~::~Existing Business",
             "Amount":"$4,002",
             "CloseDate":"Jun 30 2017",
             "ForecastCategory":"Omitted",
@@ -34,6 +37,7 @@
             }
         },
         {
+            "H":"Type~::~Existing Business",
             "Amount":"$4,003",
             "CloseDate":"Jun 30 2017",
             "ForecastCategory":"Best Case",
@@ -45,6 +49,7 @@
             }
         },
         {
+            "H":"Product~::~Support",
             "Amount":"$4,004",
             "CloseDate":"Jun 30 2017",
             "ForecastCategory":"Omitted",
@@ -56,6 +61,31 @@
             }
         },
         {
+            "H":"Product~::~Support",
+            "Amount":"$4,005",
+            "CloseDate":"Jun 30 2017",
+            "ForecastCategory":"Commit",
+            "OpportunityName":"Deal 5",
+            "OpportunityOwner":"Mickey Mouse",
+            "Stage":"Stage 5",
+            "in_fcst": {
+                "option": true
+            }
+        },
+        {
+            "H":"Product~::~Education",
+            "Amount":"$4,005",
+            "CloseDate":"Jun 30 2017",
+            "ForecastCategory":"Commit",
+            "OpportunityName":"Deal 5",
+            "OpportunityOwner":"Mickey Mouse",
+            "Stage":"Stage 5",
+            "in_fcst": {
+                "option": true
+            }
+        },
+        {
+            "H":"Product~::~Education",
             "Amount":"$4,005",
             "CloseDate":"Jun 30 2017",
             "ForecastCategory":"Commit",

@@ -1,23 +1,25 @@
 {
-    "all_nodes": ["~::~summary"],
-    "currentPeriod": {
-        "quarterAsDefaultView": false,
-        "quarterIsReadOnly": false,
-        "period": {
-            "Q": "2017Q2",
-            "months": {
-                "201704": {
-                    "relative_period": "h"
-                },
-                "201705": {
-                    "relative_period": "c"
-                },
-                "201706": {
-                    "relative_period": "f"
+    "m": {
+        "all_nodes": ["~::~summary"],
+        "currentPeriod": {
+            "quarterAsDefaultView": false,
+            "quarterIsReadOnly": false,
+            "period": {
+                "Q": "2017Q2",
+                "months": {
+                    "201704": {
+                        "relative_period": "h"
+                    },
+                    "201705": {
+                        "relative_period": "c"
+                    },
+                    "201706": {
+                        "relative_period": "f"
+                    }
                 }
             }
-        }
-    },
-    "is_rep": false,
-    "node": "~::~summary" 
+        },
+        "is_rep": false,
+        "node": "~::~summary" 
+    }
 }
