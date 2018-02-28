@@ -1,5 +1,32 @@
-## Mock Data Spec
+# Mock Data Server
+Before you can run the mock backend server, you need to download the following npm package:\\
+`npm install -g json-server`
 
+The seed application has 4 mock api dependancies(see details of the response's in the spec section below): \\
+1. m.mock.json
+2. summary.mock.json
+3. data-by-field.mock.json
+4. deals.list.json
+
+In order for the client application to make api requests we need to run a server for each endpoint.\\
+cd into the `/mock_api` directory and run the following commands (each command in a new terminal instances):\\
+1. json-server --watch m.mock.json
+2. json-server --watch summary.mock.json
+3. json-server --watch data-by-field.mock.json
+4. json-server --watch dealslist.mock.json
+
+Now the client can use each endpoint, using port 3000 as the domain:\\
+1. http://localhost:3000/m
+2. http://localhost:3000/summary
+3. http://localhost:3000/data-by-field
+4. http://localhost:3000/deals
+
+Paste the urls into your browser to make sure they are working properly.
+
+For more information on `json-server` go here: https://www.npmjs.com/package/json-server 
+
+
+# Mock Data Spec
 ### 1. m.mock.json
 
 params - none\\
