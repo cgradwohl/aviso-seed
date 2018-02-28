@@ -1,0 +1,49 @@
+{
+    "config": {
+        "writables":{
+            "grid": ["fc0", "fc1"],
+            "summary": []
+        }
+    },
+    "data": [
+        {
+            "downside":103386601.98,
+            "forecast":110787197.94,
+            "is_rep":false,
+            "name":"Global",
+            "node":".~::~summary",
+            "plan":945678567,
+            "upside":118502182.67
+        },
+        {
+            "downside":58683409.06,
+            "forecast":58683409.06,
+            "is_rep":false,
+            "name":"Existing Business",
+            "node":"Type~::~Existing Business",
+            "parent":".~::~summary",
+            "plan":52970000,
+            "upside":70240663.04
+        },
+        {
+            "downside":6832158.07,
+            "forecast":9276081.09,
+            "is_rep":false,
+            "name":"Support",
+            "node":"Product~::~Support",
+            "parent":".~::~summary",
+            "plan":6290000,
+            "upside":11371616.48
+        },
+        {
+            "downside":6000.07,
+            "forecast":9000.09,
+            "is_rep":false,
+            "name":"Education",
+            "node":"Product~::~Education",
+            "parent":".~::~summary",
+            "plan":62000,
+            "upside":11000.48
+        }
+    ]
+}

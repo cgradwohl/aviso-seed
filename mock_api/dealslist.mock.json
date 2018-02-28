@@ -1,0 +1,70 @@
+{
+    "deals": [
+        {
+            "Amount":"$4,000",
+            "CloseDate":"Jun 30 2017",
+            "ForecastCategory":"Omitted",
+            "OpportunityName":"Deal 0",
+            "OpportunityOwner":"Bugs Bunny",
+            "Stage":"Stage 0",
+            "in_fcst": {
+                "option": true
+            }
+        },
+        {
+            "Amount":"$4,001",
+            "CloseDate":"Jun 30 2017",
+            "ForecastCategory":"Omitted",
+            "OpportunityName":"Deal 1",
+            "OpportunityOwner":"Roger Rabbit",
+            "Stage":"Stage 1",
+            "in_fcst": {
+                "option": true
+            }
+        },
+        {
+            "Amount":"$4,002",
+            "CloseDate":"Jun 30 2017",
+            "ForecastCategory":"Omitted",
+            "OpportunityName":"Deal 2",
+            "OpportunityOwner":"Goofy",
+            "Stage":"Stage 2",
+            "in_fcst": {
+                "option": true
+            }
+        },
+        {
+            "Amount":"$4,003",
+            "CloseDate":"Jun 30 2017",
+            "ForecastCategory":"Best Case",
+            "OpportunityName":"Deal 3",
+            "OpportunityOwner":"Donald Duck",
+            "Stage":"Stage 3",
+            "in_fcst": {
+                "option": true
+            }
+        },
+        {
+            "Amount":"$4,004",
+            "CloseDate":"Jun 30 2017",
+            "ForecastCategory":"Omitted",
+            "OpportunityName":"Deal 4",
+            "OpportunityOwner":"Sadie Read",
+            "Stage":"Stage 4",
+            "in_fcst": {
+                "option": true
+            }
+        },
+        {
+            "Amount":"$4,005",
+            "CloseDate":"Jun 30 2017",
+            "ForecastCategory":"Commit",
+            "OpportunityName":"Deal 5",
+            "OpportunityOwner":"Mickey Mouse",
+            "Stage":"Stage 5",
+            "in_fcst": {
+                "option": true
+            }
+        }
+    ]
+}
