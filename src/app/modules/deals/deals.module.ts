@@ -9,6 +9,8 @@
  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { DEALS_ROUTES } from './router/deals.routes';
 
 /** Services */
 import { DataService } from './services/data.service';
@@ -22,7 +24,8 @@ import { DealDetailComponent } from './components/deal-detail/deal-detail.compon
 
 @NgModule({
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule.forChild(DEALS_ROUTES)
     ],
     // exports: [],
     declarations: [

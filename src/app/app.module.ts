@@ -10,12 +10,14 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { ROUTES } from './router/routes';
+
 import { LoginModule } from './modules/login/login.module';
-import { HeaderModule } from './modules/header/header.module';
 import { ForecastModule } from './modules/forecast/forecast.module';
 import { DealsModule } from './modules/deals/deals.module';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app/app.component';
 
 
 @NgModule({
@@ -24,8 +26,10 @@ import { AppComponent } from './app.component';
     ],
     imports: [
         BrowserModule,
+        RouterModule.forRoot(ROUTES),
         ForecastModule,
-        DealsModule
+        DealsModule,
+        LoginModule
     ],
     providers: [],
     bootstrap: [AppComponent]

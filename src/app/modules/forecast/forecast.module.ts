@@ -9,6 +9,10 @@
  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FORECAST_ROUTES } from './router/forecast.routes';
+
+
 
 /** Service */
 import { DataService } from './services/data.service';
@@ -18,7 +22,8 @@ import { ForecastComponent } from './components/forecast.component';
 
 @NgModule({
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule.forChild(FORECAST_ROUTES)
     ],
     // exports: [],
     declarations: [
