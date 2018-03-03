@@ -7,31 +7,30 @@
  * that external components can use them. @NgModule can also add
  * service providers to the application dependency injectors.
  */
+
+/** Angular */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { FORECAST_ROUTES } from './router/forecast.routes';
 
+/** Routing  */
+import { ForecastRoutingModule } from './forecast-routing.module';
 
-
-/** Service */
-import { DataService } from './services/data.service';
-import { FmSummaryComponent } from './components/fm-summary/fm-summary.component';
-import { FmRowComponent } from './components/fm-row/fm-row.component';
+/** Components */
 import { ForecastComponent } from './components/forecast.component';
+
+/** Services */
+import { DataService } from './services/data.service';
 
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule.forChild(FORECAST_ROUTES)
+        ForecastRoutingModule
     ],
     // exports: [],
     declarations: [
         // components
         // directives
         // pipes
-        FmSummaryComponent,
-        FmRowComponent,
         ForecastComponent
     ],
     providers: [

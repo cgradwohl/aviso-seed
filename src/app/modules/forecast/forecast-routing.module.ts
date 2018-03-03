@@ -7,18 +7,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginComponent } from './components/login.component';
+import { ForecastComponent } from './components/forecast.component';
 
-const LOGIN_ROUTES: Routes = [
+const FM_ROUTES: Routes = [
     {
         path: '',
-        component: LoginComponent
+        component: ForecastComponent
     }
 ];
 
 @NgModule({
-    imports: [RouterModule.forChild(LOGIN_ROUTES)],
+    imports: [RouterModule.forChild(FM_ROUTES)],
     exports: [RouterModule],
     declarations: []
 })
-export class LoginRoutingModule { }
+export class ForecastRoutingModule { }

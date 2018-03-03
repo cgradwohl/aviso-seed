@@ -10,13 +10,8 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { ROUTES } from './router/routes';
 
-import { LoginModule } from './modules/login/login.module';
-import { ForecastModule } from './modules/forecast/forecast.module';
-import { DealsModule } from './modules/deals/deals.module';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app/app.component';
 
 
@@ -26,10 +21,7 @@ import { AppComponent } from './components/app/app.component';
     ],
     imports: [
         BrowserModule,
-        RouterModule.forRoot(ROUTES),
-        ForecastModule,
-        DealsModule,
-        LoginModule
+        AppRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]

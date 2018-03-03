@@ -9,32 +9,33 @@
  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { DEALS_ROUTES } from './router/deals.routes';
 
-/** Services */
-import { DataService } from './services/data.service';
+/** Routing */
+import { DealsRoutingModule } from './deals-routing.module';
 
 /** Components */
 import { DealsComponent } from './components/deals.component';
 import { DealCardComponent } from './components/deal-card/deal-card.component';
 import { DealDetailComponent } from './components/deal-detail/deal-detail.component';
 
+/** Services */
+import { DataService } from './services/data.service';
 
 
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule.forChild(DEALS_ROUTES)
+        DealsRoutingModule
     ],
     // exports: [],
     declarations: [
         // components
         // directives
         // pipes
-    DealsComponent,
+        DealsComponent,
         DealCardComponent,
-        DealDetailComponent],
+        DealDetailComponent
+    ],
     providers: [
         // services
         DataService

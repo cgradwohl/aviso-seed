@@ -7,18 +7,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginComponent } from './components/login.component';
+import { DealsComponent } from './components/deals.component';
 
-const LOGIN_ROUTES: Routes = [
+const DEALS_ROUTES: Routes = [
     {
         path: '',
-        component: LoginComponent
+        component: DealsComponent
     }
 ];
 
 @NgModule({
-    imports: [RouterModule.forChild(LOGIN_ROUTES)],
+    imports: [RouterModule.forChild(DEALS_ROUTES)],
     exports: [RouterModule],
     declarations: []
 })
-export class LoginRoutingModule { }
+export class DealsRoutingModule { }
