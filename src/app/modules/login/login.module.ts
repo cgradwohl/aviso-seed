@@ -16,14 +16,17 @@ import { LoginRoutingModule } from './login-routing.module';
 
 /** Components */
 import { LoginComponent } from './components/login.component';
+import { FormsModule } from '@angular/forms';
 
 /** Services */
 import { DataService, AuthService } from './services';
 
+
 @NgModule({
     imports: [
         CommonModule,
-        LoginRoutingModule
+        LoginRoutingModule,
+        FormsModule
     ],
     // exports: [],
     declarations: [

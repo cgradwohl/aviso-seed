@@ -22,6 +22,7 @@ import { reducers, effects, CustomSerializer } from './store';
 /** Components */
 import { AppComponent } from './components/app/app.component';
 import { EffectsModule } from '@ngrx/effects';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { EffectsModule } from '@ngrx/effects';
         AppRoutingModule,
         StoreModule.forRoot(reducers),
         EffectsModule.forRoot(effects),
-        StoreRouterConnectingModule.forRoot({stateKey: 'router'})
+        StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
+        FormsModule
     ],
     providers: [
         {provide: RouterStateSerializer, useClass: CustomSerializer}

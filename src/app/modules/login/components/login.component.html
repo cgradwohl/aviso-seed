@@ -1,8 +1,11 @@
 <div class="app-module">
-    <div class="login-content">
-        <button 
-        type="button" 
-        class="btn btn-outline-danger"
-        (click)="handleLogin($event)">Let's Forecast</button>
-    </div>
+  <div class="login-content">
+
+    <form #f="ngForm" (ngSubmit)="login(f)" novalidate>
+        <input name="username" ngModel required #username="ngModel" class="form-control" placeholder="Enter Username">
+        <input name="password" ngModel required #password="ngModel" class="form-control" placeholder="Password">
+        <button type="submit" class="btn btn-outline-danger">Login</button>
+    </form>
+
+  </div>
 </div>

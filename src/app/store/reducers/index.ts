@@ -15,11 +15,7 @@ export interface RouterStateUrl {
     queryParams: Params;
 }
 
-// APP STORE - different slices of state
-export interface AppState {
-    router: RouterReducerState<RouterStateUrl>;
-}
-
+// a simple routing serializer, which returns a snapshot of the current routing state.
 export class CustomSerializer implements RouterStateSerializer<RouterStateUrl> {
     serialize(routerState: RouterStateSnapshot): RouterStateUrl {
       let route = routerState.root;
@@ -35,6 +31,11 @@ export class CustomSerializer implements RouterStateSerializer<RouterStateUrl> {
       // instead of the entire snapshot
       return { url, params, queryParams };
     }
+}
+
+// APP STORE - different slices of state
+export interface AppState {
+    router: RouterReducerState<RouterStateUrl>;
 }
 
 // register app reducers
