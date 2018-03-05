@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+.app-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    /* border: 3px solid green; */
+    padding: 10px;
+    
+}
+
+.app-module{
+    border: 3px solid red;
+    padding: 10px;
+    min-height: 48rem;
+    min-width: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app-btn-bar{
+    margin: 1rem;
+}
+

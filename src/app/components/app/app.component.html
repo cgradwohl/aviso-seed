@@ -1,10 +1,14 @@
 <div class="app-container">
-  <h1 class="app-content">{{title}}</h1>
-  <div>
-    <button routerLink="/login">Login</button>
-    <button routerLink="/fm">FM</button>
-    <button routerLink="/deals">Deals</button>
-    <button routerLink="">Home</button>
-  </div>
+
+  <h1 class="app-title">{{title}}</h1>
+
   <router-outlet></router-outlet>
+
+  <div class="app-btn-bar">
+    <!-- <button routerLink="/login" type="button" class="btn btn-primary">Login</button> -->
+    <button routerLink="/fm" type="button" class="btn btn-info">FM</button>
+    <button routerLink="/deals" type="button" class="btn btn-info">Deals</button>
+    <button routerLink="" type="button" class="btn btn-primary">Home</button>
+  </div>
+  
 </div>
