@@ -7,6 +7,8 @@ import { ActionReducerMap } from '@ngrx/store';
 /** Router-Store */
 import { routerReducer, RouterReducerState, RouterStateSerializer } from '@ngrx/router-store';
 
+/** State */
+import * as fromAuth from './auth.reducer';
 
 // defines Router URL State
 export interface RouterStateUrl {
@@ -36,10 +38,12 @@ export class CustomSerializer implements RouterStateSerializer<RouterStateUrl> {
 // APP STORE - different slices of state
 export interface AppState {
     router: RouterReducerState<RouterStateUrl>;
+    authentication: fromAuth.AuthState;
 }
 
 // register app reducers
 export const reducers: ActionReducerMap<AppState> = {
-    router: routerReducer
+    router: routerReducer,
+    authentication: fromAuth.reducer
 };
 

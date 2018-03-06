@@ -1,4 +1,3 @@
-
 /** Angular */
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
@@ -8,8 +7,8 @@ import { Router } from '@angular/router';
 
 /** Store */
 import { Store } from '@ngrx/store';
-import * as RouterActions from '../../../store/actions';
 import { AppState } from './../../../store/reducers';
+import * as fromStore from '../../../store';
 
 @Component({
     selector: 'app-login',
@@ -23,19 +22,12 @@ export class LoginComponent implements OnInit {
     ) { }
 
     ngOnInit() {
+        this.store.select(fromStore.selectAuthState).subscribe(bool => console.log('du', bool));
     }
 
     login(f: NgForm) {
         console.log(f.value);
-        const validUser = f.value.username === 'abc' && f.value.password === '123';
-
-        if (validUser) {
-            this.store.dispatch(new RouterActions.Go({
-                path: ['/fm']
-            }));
-        } else {
-            return;
-        }
+        this.store.dispatch(new fromStore.AuthenticateUser(f.value));
     }
 
 }

@@ -19,7 +19,7 @@ import { LoginComponent } from './components/login.component';
 import { FormsModule } from '@angular/forms';
 
 /** Services */
-import { DataService, AuthService } from './services';
+import { DataService } from './services';
 
 
 @NgModule({
@@ -33,8 +33,7 @@ import { DataService, AuthService } from './services';
         LoginComponent
     ],
     providers: [
-        DataService,
-        AuthService
+        DataService
     ]
 })
 export class LoginModule { }

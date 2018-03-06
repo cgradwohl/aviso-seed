@@ -10,6 +10,8 @@
 /** Angular */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 /** Routing */
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +24,9 @@ import { reducers, effects, CustomSerializer } from './store';
 /** Components */
 import { AppComponent } from './components/app/app.component';
 import { EffectsModule } from '@ngrx/effects';
-import { FormsModule } from '@angular/forms';
+
+/** Services */
+import { AuthService, DataService } from './services';
 
 
 @NgModule({
@@ -31,6 +35,7 @@ import { FormsModule } from '@angular/forms';
     ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         AppRoutingModule,
         StoreModule.forRoot(reducers),
         EffectsModule.forRoot(effects),
@@ -38,7 +43,9 @@ import { FormsModule } from '@angular/forms';
         FormsModule
     ],
     providers: [
-        {provide: RouterStateSerializer, useClass: CustomSerializer}
+        {provide: RouterStateSerializer, useClass: CustomSerializer},
+        AuthService,
+        DataService
     ],
     bootstrap: [AppComponent]
 })
