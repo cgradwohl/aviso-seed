@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
+/** Store */
+import { Store } from '@ngrx/store';
+import * as fromStore from '../../../store';
+
+
 @Component({
-  selector: 'app-forecast',
-  templateUrl: './forecast.component.html',
-  styleUrls: ['./forecast.component.css']
+    selector: 'app-forecast',
+    templateUrl: './forecast.component.html',
+    styleUrls: ['./forecast.component.css']
 })
 export class ForecastComponent implements OnInit {
 
-  constructor() { }
+    constructor(private store: Store<fromStore.AppState>) { }
 
-  ngOnInit() {
+    ngOnInit() {
+        this.store.select(fromStore.selectTenantConfig).subscribe(data => {
+            console.log(data);
+        });
   }
 
 }
