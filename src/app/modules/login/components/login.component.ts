@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
 
 /** Store */
 import { Store } from '@ngrx/store';
-import { AppState } from './../../../store/reducers';
 import * as fromStore from '../../../store';
 
 @Component({
@@ -18,11 +17,11 @@ import * as fromStore from '../../../store';
 export class LoginComponent implements OnInit {
     constructor(
         private router: Router,
-        private store: Store<AppState>
+        private store: Store<fromStore.AppState>
     ) { }
 
     ngOnInit() {
-        this.store.select(fromStore.selectAuthState).subscribe(bool => console.log('du', bool));
+        this.store.select(fromStore.selectAuthState).subscribe(bool => console.log('test', bool));
     }
 
     login(f: NgForm) {
