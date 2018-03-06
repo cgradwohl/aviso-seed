@@ -15,7 +15,7 @@ import * as RouterActions from '../actions';
 export class RouterEffects {
     @Effect({ dispatch: false })
     /**
-     * @description - we are making an observable of type RouterAction.GO
+     * need to dispatch FM actions
      */
     navigate$ = this.actions$.ofType(RouterActions.GO)
         .map((action: RouterActions.Go) => action.payload)
