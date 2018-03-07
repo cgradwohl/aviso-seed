@@ -15,6 +15,10 @@ import { CommonModule } from '@angular/common';
 /** Routing  */
 import { ForecastRoutingModule } from './forecast-routing.module';
 
+/** Store */
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+
 /** Components */
 import { ForecastComponent } from './components/forecast.component';
 
@@ -24,7 +28,9 @@ import { DataService } from './services/data.service';
 @NgModule({
     imports: [
         CommonModule,
-        ForecastRoutingModule
+        ForecastRoutingModule,
+        StoreModule,
+        EffectsModule,
     ],
     // exports: [],
     declarations: [

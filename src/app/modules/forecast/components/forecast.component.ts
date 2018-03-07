@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 /** Store */
 import { Store } from '@ngrx/store';
-import * as fromStore from '../../../store';
 
 
 @Component({
@@ -12,12 +11,14 @@ import * as fromStore from '../../../store';
 })
 export class ForecastComponent implements OnInit {
 
-    constructor(private store: Store<fromStore.AppState>) { }
+    constructor(
+        // private store: Store<fromStore.AppState>
+    ) { }
 
     ngOnInit() {
-        this.store.select(fromStore.selectTenantConfig).subscribe(data => {
-            console.log(data);
-        });
+        // this.store.select(fromStore.selectTenantConfig).subscribe(data => {
+        //     console.log('fm data', data);
+        // });
   }
 
 }

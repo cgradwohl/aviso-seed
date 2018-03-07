@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './modules/auth/services/auth-guard.service';
 
-import { AppComponent } from './components/app/app.component';
 
 const APP_ROUTES: Routes = [
     {
-        path: 'login',
-        loadChildren: './modules/login/login.module#LoginModule'
-    },
-    {
         path: 'fm',
-        loadChildren: './modules/forecast/forecast.module#ForecastModule'
+        loadChildren: './modules/forecast/forecast.module#ForecastModule',
+        canActivate: [AuthGuard]
     },
     {
         path: 'deals',
-        loadChildren: './modules/deals/deals.module#DealsModule'
+        loadChildren: './modules/deals/deals.module#DealsModule',
+        canActivate: [AuthGuard]
     },
     {
         path: '',
-        redirectTo: 'login',
+        redirectTo: 'fm',
         pathMatch: 'full'
     },
 ];
