@@ -11,10 +11,15 @@ export const initialState: State = {
 export function reducer(state = initialState, action: fromForecast.ForecastActions): State {
     switch (action.type) {
         case fromForecast.LOAD_FM_DATA_SUCCESS: {
-            console.log('yolo');
             return {
                 ...state,
                 data: action.payload
+            };
+        }
+
+        case fromForecast.LOAD_FM_DATA_FAILURE: {
+            return {
+                data: {}
             };
         }
 

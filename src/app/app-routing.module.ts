@@ -15,6 +15,11 @@ const APP_ROUTES: Routes = [
         // canActivate: [AuthGuard]
     },
     {
+        path: 'error',
+        loadChildren: './modules/error/error.module#ErrorModule',
+        // canActivate: [AuthGuard]
+    },
+    {
         path: '',
         redirectTo: '/fm',
         pathMatch: 'full'

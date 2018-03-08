@@ -6,23 +6,16 @@ export const LOAD_FM_DATA_FAILURE = 'LOAD_FM_DATA_FAILURE';
 
 export class LoadFmData implements Action {
     readonly type = LOAD_FM_DATA;
-    constructor() {
-        console.log('HE:LLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOO');
-    }
 }
 
 export class LoadFmDataSuccess implements Action {
     readonly type = LOAD_FM_DATA_SUCCESS;
-    constructor(public payload: any) {
-        console.log('paypay', payload);
-    }
+    constructor(public payload: any) { }
 }
 
 export class LoadFmDataFailure implements Action {
-    readonly type = LOAD_FM_DATA_SUCCESS;
-    constructor(public err: any) {
-        console.log('err', err);
-    }
+    readonly type = LOAD_FM_DATA_FAILURE;
+    constructor(public err: any) { }
 }
 
-export type ForecastActions = LoadFmData | LoadFmDataSuccess | LoadFmDataSuccess;
+export type ForecastActions = LoadFmData | LoadFmDataSuccess | LoadFmDataFailure;

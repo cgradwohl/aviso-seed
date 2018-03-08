@@ -20,9 +20,7 @@ export class LoginComponent implements OnInit {
         private store: Store<fromAuthStore.AuthState>
     ) { }
 
-    ngOnInit() {
-        this.store.select(fromAuthStore.selectLoggedIn).subscribe(bool => console.log('loggedIn', bool));
-    }
+    ngOnInit() { }
 
     login(f: NgForm) {
         this.store.dispatch(new fromAuthStore.Login(f.value));

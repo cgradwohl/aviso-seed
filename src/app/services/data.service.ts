@@ -11,7 +11,6 @@ export class DataService {
     constructor(private http: HttpClient) { }
 
     getTenantConfig(): Observable<any> {
-        console.log('hey!');
         return this.http.get('http://localhost:3000/m').pipe(
             catchError((err: any) => Observable.throw(err.json()))
         );
