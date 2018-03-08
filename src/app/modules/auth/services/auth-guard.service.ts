@@ -4,7 +4,7 @@ import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import { map, take } from 'rxjs/operators';
 import * as Auth from '../auth-store/actions/auth.actions';
-import * as fromAuth from '../auth-store/reducers/auth.reducers';
+import * as fromAuth from '../auth-store/reducers';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -12,7 +12,7 @@ export class AuthGuard implements CanActivate {
 
     canActivate(): Observable<boolean> {
         return this.store.pipe(
-            select(fromAuth.getLoggedIn),
+            select(fromAuth.selectLoggedIn),
             map(authed => {
                 if (!authed) {
                     this.store.dispatch(new Auth.LoginRedirect());

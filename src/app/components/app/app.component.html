@@ -6,9 +6,9 @@
 
   <div class="app-btn-bar">
     <!-- <button routerLink="/login" type="button" class="btn btn-primary">Login</button> -->
-    <button routerLink="/fm" type="button" class="btn btn-info">FM</button>
-    <button routerLink="/deals" type="button" class="btn btn-info">Deals</button>
-    <button routerLink="" type="button" class="btn btn-primary">Home</button>
+    <button *ngIf="loggedIn$" routerLink="/fm" type="button" class="btn btn-info">FM</button>
+    <button *ngIf="loggedIn$" routerLink="/deals" type="button" class="btn btn-info">Deals</button>
+    <!-- <button *ngIf="loggedIn$" routerLink="" type="button" class="btn btn-primary">Logout</button> -->
   </div>
   
 </div>

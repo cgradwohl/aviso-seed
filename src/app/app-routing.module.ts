@@ -7,12 +7,12 @@ const APP_ROUTES: Routes = [
     {
         path: 'fm',
         loadChildren: './modules/forecast/forecast.module#ForecastModule',
-        canActivate: [AuthGuard]
+        // canActivate: [AuthGuard]
     },
     {
         path: 'deals',
         loadChildren: './modules/deals/deals.module#DealsModule',
-        canActivate: [AuthGuard]
+        // canActivate: [AuthGuard]
     },
     {
         path: '',

@@ -1,7 +1,5 @@
 import { AuthActions, AuthActionTypes } from './../actions/auth.actions';
 
-
-
 export interface State {
   loggedIn: boolean;
 }

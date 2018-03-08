@@ -14,7 +14,7 @@ import { AuthService } from '../../services';
 export class AuthEffects {
     @Effect({ dispatch: false }) loginSuccess$ = this.actions$.pipe(
         ofType(AuthActionTypes.LoginSuccess),
-        tap(() => this.router.navigate(['/']))
+        tap(() => this.router.navigate(['/fm']))
     );
 
     @Effect({ dispatch: false })loginRedirect$ = this.actions$.pipe(

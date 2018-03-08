@@ -2,6 +2,8 @@ import { createSelector, createFeatureSelector } from '@ngrx/store';
 import * as fromRoot from '../../../../app-store/reducers';
 import * as fromAuth from './auth.reducers';
 
+export * from './auth.reducers';
+
 export interface AuthState {
   status: fromAuth.State;
 }
