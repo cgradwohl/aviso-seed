@@ -2,7 +2,7 @@
     "data-by-field":[
         {
           "label": "Plan",
-          "fmt": "amount",
+          "fmt": 945678567,
           "field": "fcPlan",
           "nodes": {
                 ".~::~summary": {
@@ -34,7 +34,7 @@
         {
             "field":"forecast",
             "label": "AVISO Forecast",
-            "fmt": "amount",
+            "fmt": 110787197.94,
             "nodes": {
                 ".~::~summary": {
                     "name": "Global",
@@ -73,7 +73,7 @@
         {
             "label": "Booked",
             "field": "fc0",
-            "fmt": "amount",
+            "fmt": 43257265.3,
             "nodes": {
                 ".~::~summary": {
                     "name": "Global",
@@ -120,7 +120,7 @@
         {
             "label": "Commit",
             "field": "fc1",
-            "fmt": "amount",
+            "fmt": 193460288,
             "nodes": {
                 ".~::~summary": {
                     "name": "Global",

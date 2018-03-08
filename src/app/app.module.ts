@@ -43,7 +43,7 @@ import { AuthService } from '../app/modules/auth/services';
         HttpClientModule,
         AppRoutingModule,
         StoreModule.forRoot(reducers),
-        EffectsModule.forRoot([]),
+        EffectsModule.forRoot(effects),
         StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
         FormsModule,
         AuthModule

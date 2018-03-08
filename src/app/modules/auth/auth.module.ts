@@ -8,8 +8,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 /** Store */
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { AuthEffects } from './auth-store';
-import { reducers } from '../auth/auth-store/reducers';
+import { reducers, effects } from './auth-store';
 
 /** Components */
 import { LoginComponent } from './components/login/login.component';
@@ -22,7 +21,7 @@ import { AuthGuard, AuthService } from './services';
     CommonModule,
     AuthRoutingModule,
     StoreModule.forFeature('auth', reducers),
-    EffectsModule.forFeature([AuthEffects]),
+    EffectsModule.forFeature(effects),
     FormsModule
   ],
   declarations: [LoginComponent],

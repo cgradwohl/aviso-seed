@@ -16,9 +16,9 @@ const APP_ROUTES: Routes = [
     },
     {
         path: '',
-        redirectTo: 'fm',
+        redirectTo: '/fm',
         pathMatch: 'full'
-    },
+    }
 ];
 
 @NgModule({

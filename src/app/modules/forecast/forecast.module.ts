@@ -18,6 +18,7 @@ import { ForecastRoutingModule } from './forecast-routing.module';
 /** Store */
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { reducers, effects} from './forecast-store';
 
 /** Components */
 import { ForecastComponent } from './components/forecast.component';
@@ -29,8 +30,8 @@ import { DataService } from './services/data.service';
     imports: [
         CommonModule,
         ForecastRoutingModule,
-        StoreModule,
-        EffectsModule,
+        StoreModule.forFeature('forecast', reducers),
+        EffectsModule.forFeature(effects),
     ],
     // exports: [],
     declarations: [
