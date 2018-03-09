@@ -27,6 +27,7 @@ export class AuthEffects {
     @Effect({ dispatch: false }) loginSuccess$ = this.actions$.pipe(
         ofType(AuthActionTypes.LoginSuccess),
         map(() => this.router.navigate(['/fm']))
+        // call AuthGuard?
     );
 
     @Effect() login$ = this.actions$.pipe(

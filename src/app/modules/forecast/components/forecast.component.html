@@ -1,10 +1,11 @@
 <div class="app-module">
+    <h1>Forecast</h1>
   <ul *ngFor="let d of data$ | async">
     <li>
-       {{ d.label }}
+      {{ d.label }}
     </li>
     <li>
-        {{ d.fmt }}
-      </li>
+      {{ d.fmt }}
+    </li>
   </ul>
 </div>

@@ -7,22 +7,22 @@ import { Effect, Actions, ofType } from '@ngrx/effects';
 import { of } from 'rxjs/observable/of';
 /** rxjs */
 import { map, switchMap } from 'rxjs/operators';
-import * as fromFMActions from '../actions';
+import * as fromDeals from '../actions';
 import { DataService } from '../../services/data.service';
 
 
 @Injectable()
-export class ForecastEffects {
-    @Effect({ dispatch: false })loadFmDataFailure$ = this.actions$.pipe(
-        ofType(fromFMActions.LOAD_FM_DATA_FAILURE),
+export class DealsEffects {
+    @Effect({ dispatch: false })loadDealsFailure$ = this.actions$.pipe(
+        ofType(fromDeals.LOAD_DEALS_FAILURE),
         map(() => this.router.navigate(['/error']))
     );
 
-    @Effect() loadFmData$ = this.actions$.pipe(
-        ofType(fromFMActions.LOAD_FM_DATA),
-        switchMap(() => this.dataService.getFMData()),
-        map(data => new fromFMActions.LoadFmDataSuccess(data)),
-        catchError(err => of(new fromFMActions.LoadFmDataFailure(err)))
+    @Effect() loadDeals$ = this.actions$.pipe(
+        ofType(fromDeals.LOAD_DEALS),
+        switchMap(() => this.dataService.getDeals()),
+        map(data => new fromDeals.LoadDealsSuccess(data)),
+        catchError(err => of(new fromDeals.LoadDealsFailure(err)))
     );
 
     constructor(

@@ -1,4 +1,4 @@
-import * as fromForecast from './../actions/forecast.actions';
+import * as fromDeals from './../actions/deals.actions';
 
 export interface State {
     data: Array<any>;
@@ -8,16 +8,16 @@ export const initialState: State = {
     data: []
 };
 
-export function reducer(state = initialState, action: fromForecast.ForecastActions): State {
+export function reducer(state = initialState, action: fromDeals.DealsActions): State {
     switch (action.type) {
-        case fromForecast.LOAD_FM_DATA_SUCCESS: {
+        case fromDeals.LOAD_DEALS_SUCCESS: {
             return {
                 ...state,
                 data: action.payload
             };
         }
 
-        case fromForecast.LOAD_FM_DATA_FAILURE: {
+        case fromDeals.LOAD_DEALS_FAILURE: {
             return {
                 data: []
             };

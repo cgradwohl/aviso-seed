@@ -13,19 +13,26 @@ import { CommonModule } from '@angular/common';
 /** Routing */
 import { DealsRoutingModule } from './deals-routing.module';
 
+/** Store */
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { reducers, effects } from './deals-store';
+
+
 /** Components */
 import { DealsComponent } from './components/deals.component';
-import { DealCardComponent } from './components/deal-card/deal-card.component';
-import { DealDetailComponent } from './components/deal-detail/deal-detail.component';
 
 /** Services */
 import { DataService } from './services/data.service';
 
 
+
 @NgModule({
     imports: [
         CommonModule,
-        DealsRoutingModule
+        DealsRoutingModule,
+        StoreModule.forFeature('deals', reducers),
+        EffectsModule.forFeature(effects)
     ],
     // exports: [],
     declarations: [
@@ -33,8 +40,6 @@ import { DataService } from './services/data.service';
         // directives
         // pipes
         DealsComponent,
-        DealCardComponent,
-        DealDetailComponent
     ],
     providers: [
         // services

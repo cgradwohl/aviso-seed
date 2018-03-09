@@ -20,6 +20,6 @@ export class ForecastComponent implements OnInit {
     ngOnInit() {
         this.data$ = this.store.select(fromStore.selectData);
         this.store.dispatch(new fromStore.LoadFmData());
-  }
+    }
 
 }

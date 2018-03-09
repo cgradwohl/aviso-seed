@@ -1,3 +1,18 @@
 <div class="app-module">
-    <p>deals works</p>
+  <h1>Deals</h1>
+  <ul *ngFor="let d of data$ | async; index as i;">
+      <h5>Deal {{i + 1}}</h5>
+    <li>
+      Amount {{ d.Amount }}
+    </li>
+    <li>
+      Close Date {{ d.CloseDate }}
+    </li>
+    <li>
+      Forecast Category {{ d.CloseDate }}
+    </li>
+    <li>
+      Close Date {{ d.CloseDate }}
+    </li>
+  </ul>
 </div>
