@@ -17,6 +17,7 @@ import { AuthService } from '../../services';
 import * as fromFM from '../../../forecast/forecast-store/actions';
 import { ForecastState } from '../../../forecast/forecast-store';
 
+// TESTING NEW FEATURE BRANCH
 @Injectable()
 export class AuthEffects {
     @Effect({ dispatch: false })loginRedirect$ = this.actions$.pipe(
